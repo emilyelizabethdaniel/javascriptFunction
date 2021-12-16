@@ -2,23 +2,9 @@
 //coding practice//
 //--------------------------------------------------------------------------------------------------------//
 
-let n = 9;
-let numberArray = [];
-
-function sumOfN(n) {
-    for (let i = 0; i <= n; i++) {
-
-        if (i % 3 === 0 || i % 5 === 0) {
-            numberArray.push(i);
-            var sum = numberArray.reduce((total, sum) => total + sum);
-            console.log(sum);
-        } else {
-            console.log('not a value divisible by 3 or 5, try again!')
-        }
-    }
-};
-
-// sumOfN(n);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//QUESTION 1
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function productOfN(n) {
     for (let i = 1; i <= n; i++) {
@@ -26,9 +12,13 @@ function productOfN(n) {
         var product = numberArray.reduce((total, product) => total * product);
         console.log(product);
     }
-}
+};
 
 // productOfN(n);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//QUESTION 2
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function sumOrProduct(n, choice) {
     if (choice === 'sum') {
@@ -41,6 +31,83 @@ function sumOrProduct(n, choice) {
 };
 
 // sumOrProduct(6, 'product');
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//QUESTION 3
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function sumOfN() {
+    let numberArray = [];
+    let questionOneValue = document.getElementById("input3");
+    let questionOneClick = document.getElementById("submit3");
+    const div3 = document.getElementById("3");
+    const answer = document.createElement("h5");
+
+
+    questionOneClick.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log('click working');
+        let userNumber = questionOneValue.value;
+        for (let i = 0; i <= userNumber; i++) {
+            if (i % 3 === 0 || i % 5 === 0) {
+                numberArray.push(i);
+                let sum = numberArray.reduce((total, sum) => total + sum);
+                console.log(sum);
+                answer.textContent = sum;
+                div3.appendChild(answer);
+
+            } else {
+                console.log('not a value divisible by 3 or 5, try again!');
+                answer.textContent = "not divisible by 3 or 5!";
+                div3.append(answer);
+            }
+        }
+    })
+};
+
+sumOfN();
+
+function button3() {
+    document.getElementById("button3").addEventListener('click', function(e){
+        document.getElementById("3").innerHTML = "";
+        document.getElementById("3").innerHTML = function sumOfN() {
+            let numberArray = [];
+            let questionOneValue = document.getElementById("input3");
+            let questionOneClick = document.getElementById("submit3");
+            const div3 = document.getElementById("3");
+            const answer = document.createElement("h5");
+        
+        
+            questionOneClick.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log('click working');
+                let userNumber = questionOneValue.value;
+                for (let i = 0; i <= userNumber; i++) {
+                    if (i % 3 === 0 || i % 5 === 0) {
+                        numberArray.push(i);
+                        let sum = numberArray.reduce((total, sum) => total + sum);
+                        console.log(sum);
+                        answer.textContent = sum;
+                        div3.appendChild(answer);
+        
+                    } else {
+                        console.log('not a value divisible by 3 or 5, try again!');
+                        answer.textContent = "not divisible by 3 or 5!";
+                        div3.append(answer);
+                    }
+                }
+            })
+        };
+    })
+};
+
+button3(); 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//QUESTION 4
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function printAllPrimeNumbers() {
     let n = 1;
@@ -55,6 +122,9 @@ function printAllPrimeNumbers() {
 
 // printAllPrimeNumbers();
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//QUESTION 5
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function guessingGame() {
     let numberToGuess = 13;
@@ -83,6 +153,10 @@ function guessingGame() {
 }
 // guessingGame();
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//QUESTION 6
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function reccordLeapYears() {
     var yearsReccorded = 0;
     let currentLeapYear = new Date(1709186400000);
@@ -98,6 +172,10 @@ function reccordLeapYears() {
 
 // reccordLeapYears();
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//QUESTION 7
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 var pothole1 = ["X", ".", ".", "X", "X", ".", ".", "X", ".", "."]
 function fixPotholes(pothole) {
     let potholesToFix = 0;
@@ -112,4 +190,4 @@ function fixPotholes(pothole) {
     }
 };
 
-fixPotholes(pothole1);
+// fixPotholes(pothole1);
