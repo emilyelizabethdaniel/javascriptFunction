@@ -16,7 +16,6 @@ function sumOfN(n) {
             console.log('not a value divisible by 3 or 5, try again!')
         }
     }
-
 };
 
 // sumOfN(n);

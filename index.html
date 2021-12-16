@@ -1,29 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     <title>coding challenges</title>
-    
+
 </head>
+
 <body>
-    <header>
-        <h1>
-        look at your console!
-        </h1>
-    </header>
+    <div class="container">
+        <nav class="nav flex-column">
+            <a class="nav-link" href="https://github.com/emilyelizabethdaniel">GitHub</a>
+            <a class="nav-link" href="https://www.linkedin.com/in/emily-daniel127/">LinkedIn</a>
+            <a class="nav-link" href="https://adriann.github.io/programming_problems.html">Question source</a>
+        </nav>
+        <header>
+            <h1>
+                JavaScript Functions
+            </h1>
+            <h3>
+                This is a webpage to practice creating and using JavaScript logic functions. Please click on any of the
+                buttons below to see how they work!
+                </h2>
+        </header>
+    </div>
     <main id="number">
-        <h3>Guess the number!</h3>
-        <p>Guess a number and we will tell you if you are over or under, keep guessing until you get it right!</p>
-        <form>
-            <input type="number" id="input"> 
-            <input type="submit" id="submit" value="Submit">
-        </form>
+        <div class="questions">
+            <h4>
+                1. Sum of your input:
+            </h4>
+            <p>
+                add a number and this function will output the sum of the number 1 through n.
+            </p>
+            <form>
+                <input type="number" id="input">
+                <input type="submit" id="submit" value="Click to run function">
+            </form>
+        </div>
+        <div class="questions">
+            <h4>
+                2. Product of your input:
+            </h4>
+            <p>
+                add a number and this function will output the product of the number 1 through n.
+            </p>
+            <form>
+                <input type="number" id="input">
+                <input type="submit" id="submit" value="Click to run function">
+            </form>
+        </div>
+        <div class="questions">
+            <h4>
+                3. Is your number divisible by three or five:
+            </h4>
+            <p>
+                add a number and this function will see if n is divisible by three or five.
+            </p>
+            <form>
+                <input type="number" id="input">
+                <input type="submit" id="submit" value="Click to run function">
+            </form>
+        </div>
+        <div class="questions">
+            <h4>
+                4. Print all prime numbers:
+            </h4>
+            <p>
+                Input up to how many numbers you would like to print.
+            </p>
+            <form>
+                <input type="number" id="input">
+                <input type="submit" id="submit" value="Click to run function">
+            </form>
+        </div>
+        <div class="questions">
+            <h4>
+                5. Guess a number:
+            </h4>
+            <p>
+                input a number and this function will tell you if you're above, below or just right. Afterwords, it
+                will
+                tell you the amount of guesses you made.
+            </p>
+            <form>
+                <input type="number" id="input">
+                <input type="submit" id="submit" value="Click to run function">
+            </form>
+        </div>
     </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="./assets/js/script.js"></script>
+
 </html>
