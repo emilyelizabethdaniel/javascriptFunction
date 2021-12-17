@@ -69,41 +69,41 @@ function sumOfN() {
 
 sumOfN();
 
-// function button3() {
-//     document.getElementById("button3").addEventListener('click', function(e){
-//         document.getElementById("3").innerHTML = "";
-//         document.getElementById("3").innerHTML = function sumOfN() {
-//             let numberArray = [];
-//             let questionOneValue = document.getElementById("input3");
-//             let questionOneClick = document.getElementById("submit3");
-//             const div3 = document.getElementById("3");
-//             const answer = document.createElement("h5");
+function button3() {
+    document.getElementById("button3").addEventListener('click', function(e){
+        document.getElementById("3").innerHTML = "";
+        document.getElementById("3").innerHTML = function sumOfN() {
+            let numberArray = [];
+            let questionOneValue = document.getElementById("input3");
+            let questionOneClick = document.getElementById("submit3");
+            const div3 = document.getElementById("3");
+            const answer = document.createElement("h5");
         
         
-//             questionOneClick.addEventListener('click', function (e) {
-//                 e.preventDefault();
-//                 console.log('click working');
-//                 let userNumber = questionOneValue.value;
-//                 for (let i = 0; i <= userNumber; i++) {
-//                     if (i % 3 === 0 || i % 5 === 0) {
-//                         numberArray.push(i);
-//                         let sum = numberArray.reduce((total, sum) => total + sum);
-//                         console.log(sum);
-//                         answer.textContent = sum;
-//                         div3.appendChild(answer);
+            questionOneClick.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log('click working');
+                let userNumber = questionOneValue.value;
+                for (let i = 0; i <= userNumber; i++) {
+                    if (i % 3 === 0 || i % 5 === 0) {
+                        numberArray.push(i);
+                        let sum = numberArray.reduce((total, sum) => total + sum);
+                        console.log(sum);
+                        answer.textContent = sum;
+                        div3.appendChild(answer);
         
-//                     } else {
-//                         console.log('not a value divisible by 3 or 5, try again!');
-//                         answer.textContent = "not divisible by 3 or 5!";
-//                         div3.append(answer);
-//                     }
-//                 }
-//             })
-//         };
-//     })
-// };
+                    } else {
+                        console.log('not a value divisible by 3 or 5, try again!');
+                        answer.textContent = "not divisible by 3 or 5!";
+                        div3.append(answer);
+                    }
+                }
+            })
+        };
+    })
+};
 
-// button3(); 
+button3(); 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //QUESTION 4
